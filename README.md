@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Dacoid Quiz Application - 
 
-## Getting Started
+This is a simple quiz application built with Next.js, TypeScript, and Tailwind CSS. It demonstrates basic quiz functionality with a clean, responsive user interface.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Next.js 13 with App Router: Utilizes the latest Next.js features for efficient routing and server-side rendering.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. TypeScript Support: Entire application is written in TypeScript for improved developer experience and type safety.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Tailwind CSS Integration: Styled using Tailwind CSS for rapid UI development and easy customization.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Responsive Design: The quiz interface adapts to different screen sizes for a consistent user experience across devices.
 
-## Learn More
+5. Multiple Question Types:
+   - Multiple-choice questions
+   - Numeric input questions
 
-To learn more about Next.js, take a look at the following resources:
+6. Dynamic Quiz Flow:
+   - Questions are presented one at a time
+   - Automatic progression to the next question after answering
+   - Final score display upon completion of the quiz
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+7. State Management: Uses React's useState hook for managing quiz state (current question, score, etc.)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+8. UI Components: Utilizes shadcn/ui components for a polished look and feel:
+   - Button
+   - Card (with Header, Content, Footer, and Title)
+   - RadioGroup and RadioGroupItem for multiple-choice questions
+   - Input for numeric questions
+   - Label for form elements
 
-## Deploy on Vercel
+9. Accessibility: Basic accessibility features are implemented, such as proper labeling of form elements.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+10. Custom Fonts: Integrates the Inter font from Google Fonts for improved typography.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+11. Modular Component Structure: The quiz logic is encapsulated in a separate `Quiz` component for better code organization.
+
+12. Client-Side Interactivity : The Quiz component is marked with "use client" for client-side rendering and interactivity.
+
+## Project Structure
+
+- `src/app/page.tsx`: Main page component that renders the Quiz
+- `src/app/layout.tsx`: Root layout component for consistent page structure
+- `src/app/globals.css`: Global styles and Tailwind directives
+- `src/components/Quiz.tsx`: Core Quiz component with all the quiz logic
+- `tailwind.config.js`: Tailwind CSS configuration
+- `next.config.js`: Next.js configuration
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
